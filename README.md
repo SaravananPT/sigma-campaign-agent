@@ -39,6 +39,32 @@ Recommended actions:
   • SCALE_UP LI_05_OLV_YouTube — Top ROAS 2.72 — absorb freed budget (uplift ₹1,774,873)
 ```
 
+## Sample output (Claude mode — `claude-opus-4-8`)
+
+With a key set, Claude reasons *past* the raw numbers — the same graph, the same tools,
+but with judgment a template can't produce:
+
+> **Diagnosis:** The campaign looks healthy at a blended ROAS of 1.51, but that average is
+> hiding a serious leak: three line items are burning ~₹7.4L below break-even. The worst is
+> **LI_02_CTV_News**, consuming ₹7.87L — a quarter of the budget — at a 0.29 ROAS and a
+> ₹7,638 CPA (5× the campaign average). This isn't a CTV problem (LI_01_CTV_Sports is
+> healthy) — it's a *placement* problem specific to News inventory, where reach is expensive
+> and the audience doesn't convert.
+>
+> **Recommended actions:**
+> - **PAUSE** LI_02_CTV_News — 0.29 ROAS on 26% of budget; the single biggest leak
+> - **PAUSE** LI_04_Display_Prospect — 0.21 ROAS; worst efficiency in the account
+> - **CUT 50%** LI_08_Native_Feed — halve rather than kill; feed placements sometimes assist
+>   later conversions
+> - **SCALE UP** LI_05_OLV_YouTube — 2.72 ROAS with headroom; absorb the freed budget,
+>   scaling in over 2–3 days to protect pacing
+>
+> **Projected impact:** Revenue ₹46.1L → ₹63.8L (**+38.5%**); blended ROAS rises toward ~2.1.
+
+The nuance — *"placement problem, not a CTV problem"*, *"halve rather than kill because feed
+assists later conversions"*, *"scale in to protect pacing"* — is what Claude adds on top of
+the deterministic math.
+
 ## Run it
 
 ```bash
